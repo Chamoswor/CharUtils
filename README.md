@@ -21,46 +21,31 @@ SerialBufferLibrary er et Arduino-bibliotek designet for å forenkle håndtering
 
 ### Bufferhåndtering
 ```cpp
-#include "SerialBuffer.h"
+#include "CharUtils.h"
 
-SerialBuffer buffer;
+ClassName name;
 
 void setup() {
-  buffer.init();
-  buffer.add("Temperatur: ");
-  buffer.add(23.5); // Legger til en float-verdi.
-  buffer.printToOLED();
+   // ingenting enda
 }
 
 void loop() {
-  // Ingen spesiell logikk i dette eksemplet.
+  // ingenting enda
 }
 ```
 
 ### Serial Parsing
 ```cpp
-#include "Parser.h"
+#include "name.h"
 
-Parser parser;
+ClassName name;
 
 void setup() {
-  Serial.begin(9600);
-  parser.setDelimiters('<', ',', '>'); // Start, separator og slutt.
+   // ingenting enda
 }
 
 void loop() {
-  if (Serial.available()) {
-    String packet = Serial.readStringUntil('\n');
-    parser.parse(packet);
-
-    String value1 = parser.getValue(0); // Hent første verdi.
-    String value2 = parser.getValue(1); // Hent andre verdi.
-
-    Serial.print("Value 1: ");
-    Serial.println(value1);
-    Serial.print("Value 2: ");
-    Serial.println(value2);
-  }
+   // ingenting enda
 }
 ```
 
@@ -68,8 +53,8 @@ void loop() {
 
 Eksempler på bruk finner du i `examples`-mappen:
 
-1. **BasicUsage**: Viser hvordan du bruker bufferhåndtering og skriver til OLED.
-2. **AdvancedParsing**: Demonstrerer parsing av Serial-data.
+1. **Name**: forklaring
+2. **Name**: forklaring
 
 ## Lisens
 
