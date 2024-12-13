@@ -24,12 +24,30 @@ SerialBufferLibrary er et Arduino-bibliotek designet for å forenkle håndtering
 1. Åpne ditt PlatformIO-prosjekt i en teksteditor eller IDE som støtter PlatformIO.
 2. Naviger til `platformio.ini`-filen.
 3. Legg til følgende linje under `[env:your_environment]` for å inkludere biblioteket:
-
    ```ini
    lib_deps =
-     https://github.com/Chamoswor/CharUtils
+     https://github.com/brukernavn/SerialBufferLibrary
+     Adafruit GFX Library
+     Adafruit SSD1306
    ```
+   Erstatt `https://github.com/brukernavn/SerialBufferLibrary` med URL-en til ditt bibliotek hvis det ligger på GitHub eller en annen Git-tjeneste.
 4. Lagre `platformio.ini` og bygg prosjektet. PlatformIO vil automatisk laste ned og inkludere biblioteket.
+
+## Dependencies
+
+### Arduino IDE
+For å bruke dette biblioteket, må følgende biblioteker installeres manuelt via Arduino Library Manager:
+
+- **Adafruit GFX Library**
+- **Adafruit SSD1306**
+
+Søk etter bibliotekene i Library Manager og installer dem før du bruker SerialBufferLibrary.
+
+### PlatformIO
+Som nevnt i `platformio.ini`, vil PlatformIO automatisk håndtere disse avhengighetene:
+
+- Adafruit GFX Library
+- Adafruit SSD1306
 
 ## Bruk
 
