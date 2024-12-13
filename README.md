@@ -27,7 +27,7 @@ SerialBufferLibrary er et Arduino-bibliotek designet for å forenkle håndtering
 
    ```ini
    lib_deps =
-     https://github.com/Chamoswor/CharUtils.git
+     https://github.com/Chamoswor/CharUtils
    ```
 4. Lagre `platformio.ini` og bygg prosjektet. PlatformIO vil automatisk laste ned og inkludere biblioteket.
 
