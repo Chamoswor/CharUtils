@@ -10,26 +10,6 @@ SerialBufferLibrary er et Arduino-bibliotek designet for å forenkle håndtering
 2. **Serial-parsing**:
    - Parser data sendt over Serial ved hjelp av en definert pakkeformat (start, separator og slutt).
 
-## Innhold
-
-```
-SerialBufferLibrary/
-├─── keywords.txt
-├─── library.properties
-├─── examples
-│    ├─── BasicUsage
-│    │    ├─── BasicUsage.ino
-│    ├─── AdvancedParsing
-│         ├─── AdvancedParsing.ino
-├─── src
-│    ├─── SerialBuffer.h
-│    ├─── SerialBuffer.cpp
-│    ├─── Parser.h
-│    ├─── Parser.cpp
-├─── test
-     ├─── test_serialbuffer.ino
-```
-
 ## Installasjon
 
 1. Last ned biblioteket som en ZIP-fil.
