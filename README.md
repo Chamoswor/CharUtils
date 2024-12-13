@@ -12,10 +12,26 @@ SerialBufferLibrary er et Arduino-bibliotek designet for å forenkle håndtering
 
 ## Installasjon
 
+### Arduino IDE
+
 1. Last ned biblioteket som en ZIP-fil.
 2. Åpne Arduino IDE.
 3. Gå til **Sketch > Include Library > Add .ZIP Library...**.
 4. Velg den nedlastede ZIP-filen og legg til biblioteket.
+
+### PlatformIO
+
+1. Åpne ditt PlatformIO-prosjekt i en teksteditor eller IDE som støtter PlatformIO.
+2. Naviger til `platformio.ini`-filen.
+3. Legg til følgende linje under `[env:your_environment]` for å inkludere biblioteket:
+
+   ```ini
+   lib_deps =
+     https://github.com/brukernavn/SerialBufferLibrary.git
+   ```
+   
+   Erstatt `https://github.com/brukernavn/SerialBufferLibrary.git` med URL-en til ditt bibliotek hvis det ligger på GitHub eller en annen Git-tjeneste.
+4. Lagre `platformio.ini` og bygg prosjektet. PlatformIO vil automatisk laste ned og inkludere biblioteket.
 
 ## Bruk
 
